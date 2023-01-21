@@ -70,7 +70,7 @@ def Preprocessing(df):
     df.HouseT = df.HouseT.replace({'own': 0,'for free': 1,'rent': 3})
     return df
 
-with open("/Users/hemangjiwnani/Desktop/Projects/Hackathon_IITII/model.pkl", "rb") as f:
+with open("model.pkl", "rb") as f:
     model = pickle.load(f)
 
 @app.post("/predict")
