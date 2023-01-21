@@ -78,8 +78,14 @@ async def predict(item: DataType):
     df = pd.DataFrame([item.dict().values()], columns=item.dict().keys())
     df = Preprocessing(df)
     temp = list(df.iloc[0])
-    print("hello : -" + str(temp))
-    ans = model.predict(temp)
+    ans = 0
+    ans1 = model.predict([temp])
+    ans1 = list(ans1)
+    print(str(type(ans1)) + " " + str(ans1[0]))
+    if ans1[0] == 0:
+        ans = "Rejected"
+    else:
+        ans = "Accepted"
     return ans
 
 @app.get("/")
