@@ -79,7 +79,10 @@ async def predict(item: DataType):
     df = Preprocessing(df)
     temp = list(df.iloc[0])
     ans1 = list(model.predict([temp]))
-    return int(ans1[0])
+    if int(ans1[0]) == 0:
+        return "approved" #Loan Approved
+    else:
+        return "notapproved" #Loan Not Approved
 
 @app.get("/")
 async def root():
