@@ -17,7 +17,7 @@ class DataType(BaseModel):
     SA_Balance: str
     PI_Balance: int
     WorkAB: str
-    PhNum: int
+    PhNum: str
     Tenure: int
     prop: str
     JobTyp: str
@@ -57,7 +57,7 @@ def Preprocessing(df):
     df.Guarantee = df.Guarantee.replace({'none' : 0,'gaurantor' : 1,'co-applicant':  2})
     df.LoanStatus = df.LoanStatus.replace({'critical account/other loans existing (not at this bank)' : 0,'existing loans paid back duly till now' : 1,'all loans at this bank paid back duly':  2,'delay in paying off loans in the past' : 3,
                                         'no loans taken/all loans paid back duly': 4})
-    df.Experience = df.Experience.replace({'between 1 and 4 years': 0, 'greater than 4 years': 1,'less than a year': 2,'unemployed': 3})
+    df.Experience = df.Experience.replace({'between 1 and 4 years': 0, 'greater than 4 years': 1,'less than a year': 2,'unemployed': 3,"": 4})
     df.M_Status = df.M_Status.replace({'female and divorced/seperated/married': 0,'male and single': 1,'male and married/widowed': 2,
                                     'male and divorced/seperated': 3})
     df.CA_Balance = df.CA_Balance.replace({'no current account': 0,'less than 0': 1,'between 0 and 200': 3,'greater than 200': 4})
@@ -87,3 +87,29 @@ async def predict(item: DataType):
 @app.get("/")
 async def root():
     return {"message": "This API Only Has Get Method as of now"}
+
+
+
+"""
+{
+    "NPPM": 1,
+    "LoanStatus": "existing loans paid back duly till now",
+    "Objective": "Purchase of radio/television",
+    "Amount": 1278,
+    "Guarantee": "none",
+    "Experience": "between 1 and 4 years",
+    "M_Status": "male and single",
+    "ExistingLoan": 1,
+    "Age": 36,
+    "CA_Balance": "no current account",
+    "SA_Balance": "less than 100",
+    "PI_Balance": 4,
+    "WorkAB": "Yes",
+    "PhNum": 0,
+    "Tenure": 24,
+    "prop": "Real Estate",
+    "JobTyp": "management/ self-employed/highly qualified employee/ officer",
+    "HouseT": "own",
+    "NOE": 1
+}
+"""
