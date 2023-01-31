@@ -40,8 +40,10 @@ Streamlit is the easiest way especially for people with no front-end knowledge t
 
 ## Link to the app
 
-https://user-images.githubusercontent.com/73033596/159118381-76f065cb-2b65-4473-9ae1-31b3fed04a8a.mp4
 
+
+
+https://user-images.githubusercontent.com/80636235/215860666-873b0869-aa22-4b39-9bcb-9daf70f1d60e.mp4
 
 
 ## Tech Stack Used
