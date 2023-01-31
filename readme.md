@@ -113,3 +113,16 @@ It requires a header which contains different details which will be given as use
     "NOE": 1
 }
 ```
+
+
+### Start Website on LocalHost For Testing:
+
+Pre-requiste you should have node installed and setup complted on your system to run AILOEC on your local system 
+
+```
+$ npm install root_dir/main_dir
+```
+
+```
+$ npm run dev
+```
