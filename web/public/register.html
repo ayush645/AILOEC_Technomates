@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="register.css" />
+    <script src="script.js" defer></script>
+    <title>Loan Repayment</title>
+  </head>
+  <body>
+    <header>
+      <img src="./AILOEC.png" alt="" style="width: 139px;">
+  
+  </header>
+    <div class="form-img">
+      <img src="./register.svg" alt="Langing image" style="width: 686px;">
+
+    </div>
+
+
+    <form method="post" class="form">
+      <h1 class="text-center">Loan Repayment</h1>
+      <!-- Progress bar -->
+      <div class="progressbar">
+        <div class="progress" id="progress"></div>
+        
+        <div
+          class="progress-step progress-step-active"
+          data-title=""
+        ></div>
+        <div class="progress-step" data-title=""></div>
+        <div class="progress-step" data-title=""></div>
+        <div class="progress-step" data-title=""></div>
+        <div class="progress-step" data-title=""></div>
+
+
+      </div>
+
+      <!-- Steps -->
+      <div class="form-step form-step-active">
+        <div class="input-group">
+          <label for="username">Number of Maintainers</label>
+          <input type="number" name="nppm" id="username" required>
+        </div>
+        <div class="input-group">
+            <label for="ls">Loan Status</label>
+            <!-- <input type="text" name="ls" id="ls"  required> -->
+            <select type="text" value="" name="ls" class="select" id="ls" required>
+              <option>Choose</option>
+              <option>critical account/other loans existing (not at this bank)</option>
+              <option>existing loans paid back duly till now</option>
+              <option>all loans at this bank paid back duly</option>
+              <option>delay in paying off loans in the past</option>
+              <option>no loans taken/all loans paid back duly</option>
+              
+          </select>
+  
+
+          </div>
+          <div class="input-group">
+            <label for="username">Objective</label>
+            <!-- <input type="text" name = "objective" id="username" required> -->
+            <select type="text" value="" name="objective" class="select" id="username" required>
+              <option>Choose</option>
+              <option>New Car Purchase</option>
+              <option>Purchase of radio/television</option>
+              <option>Purchase of furniture/equipment</option>
+              <option>Old Car Repair</option>
+              <option>Education Loan</option>
+
+              <option>Loan for business establishment</option>
+
+              <option>Other repairs</option>
+
+              <option>Purchase of domestic appliances</option>
+
+              <option>Loan for retraining</option>
+              <option>nan</option>
+
+              
+          </select>
+         
+          </div>
+        <div class="input-group">
+          <label for="position">Amount</label>
+          <input type="number" name="amount" id="position" required>
+        </div>
+        <div class="">
+          <a href="#" class="btn btn-next width-50 ml-auto">Next</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+          <label for="phone">Guarantor</label>
+          <!-- <input type="text" name="guarantor" id="phone" required> -->
+
+          <select type="text" value="" name="guarantor" class="select" id="phone" required>
+            <option>Choose</option>
+            <option>none</option>
+            <option>gaurantor</option>
+            <option>co-applicant</option>
+            
+        </select>
+        </div>
+        <div class="input-group">
+            <label for="phone">Experience</label>
+            <!-- <input type="text" name="experience" id="phone" required> -->
+            <select type="text" value="" name="experience" class="select" id="phone" required>
+              <option>Choose</option>
+              <option>between 1 and 4 years</option>
+              <option>greater than 4 years</option>
+              <option>less than a year</option>
+              <option>unemployed</option>
+
+              
+          </select>
+          </div>
+          <div class="input-group">
+            <label for="phone">Marital Status</label>
+            <!-- <input type="text" name="maritalStatus" id="phone" required> -->
+            <select type="text" value="" name="maritalStatus" class="select" id="phone" required>
+              <option>Choose</option>
+              <option>male and single</option>
+              <option>female and divorced/seperated/married</option>
+              <option>male and married/widowed</option>
+              <option>male and divorced/seperated</option>
+
+              
+          </select>
+          </div>
+        <div class="input-group">
+          <label for="email">ExistingLoan</label>
+          <input type="number" name="existingLoan" id="email" required>
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <a href="#" class="btn btn-next">Next</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+          <label for="dob">Age</label>
+          <input type="number" name="age" id="dob" required>
+        </div>
+        <div class="input-group">
+          <label for="ID">Current Account Balance</label>
+          <!-- <input type="text" name="ca_balance" id="ID" required> -->
+          <select type="text" value="" name="ca_balance" class="select" id="ID" required>
+            <option>Choose</option>
+            <option>no current account</option>
+            <option>less than 0</option>
+            <option>between 0 and 200</option>
+            <option>greater than 200</option>
+
+            
+        </select>
+        </div>
+        <div class="input-group">
+            <label for="ID">Saving Acoount Balance</label>
+            <!-- <input type="text" name="sa_balance" id="ID" required> -->
+            <select type="text" value="" name="sa_balance" class="select" id="ID" required>
+              <option>Choose</option>
+              <option>less than 100</option>
+              <option>no savings account</option>
+              <option>between 500 and 1000</option>
+              <option>between 100 and 500</option>
+              <option>greater than 1000</option>
+  
+              
+          </select>
+          </div>
+          <div class="input-group">
+            <label for="ID">Percentage of income paid as installment</label>
+            <input type="number" name="pi" id="ID" required>
+          </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <a href="#" class="btn btn-next">Next</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+          <label for="password">Work Abroad</label>
+          <!-- <input type="text" name="workab" id="password" required> -->
+          <select type="text" value="" name="workab" class="select" id="password" required>
+            <option>Choose</option>
+            <option>Yes</option>
+            <option>No</option>
+               
+        </select>
+        </div>
+        <div class="input-group">
+            <label for="password">Phone No</label>
+            <!-- <input type="number" name="phn" id="password" required> -->
+            <select type="text" value="" name="phn" class="select" id="password" required>
+              <option>Choose</option>
+              <option>Yes</option>
+              <option>No</option>
+                 
+          </select>
+          </div>
+          <div class="input-group">
+            <label for="password">Tenure</label>
+            <input type="number" name="tenure" id="password" required>
+          </div>
+        <div class="input-group">
+          <label for="confirmPassword">Property Type</label>
+          <!-- <input
+            type="text"
+            name="prop"
+            id="confirmPassword"
+          required > -->
+
+          <select type="text" value="" name="prop" class="select" id="confirmPassword" required>
+            <option>Choose</option>
+            <option>Real Estate</option>
+            <option>car or other property</option>
+            <option>No property</option>
+
+            <option>building society savings agreement/life insurance</option>
+
+               
+        </select>
+        </div>
+        <div class="btns-group">
+            <a href="#" class="btn btn-prev">Previous</a>
+            <a href="#" class="btn btn-next">Next</a>
+          </div>
+
+          </div>
+
+
+          <div class="form-step">
+            <div class="input-group">
+              <label for="password">JobType</label>
+              <!-- <input type="text" name="jobType" id="password" required> -->
+
+              <select type="text" value="" name="jobType" class="select" id="password" required>
+                <option>Choose</option>
+                <option>skilled employee / official</option>
+                <option>unskilled - resident</option>
+                <option>unemployed/ unskilled - non-resident</option>
+    
+                <option>management/ self-employed/highly qualified employee/ officer</option>
+    
+                   
+            </select>
+            </div>
+                <div class="input-group">
+                  <label for="password">House Type</label>
+                  <!-- <input type="text" name="houset" id="password" required> -->
+                  <select type="text" value="" name="houset" class="select" id="password" required>
+                    <option>Choose</option>
+                    <option>own</option>
+                    <option>for free</option>
+                    <option>rent</option>
+              
+                       
+                </select>
+                </div>
+                <div class="input-group">
+                  <label for="password">No of year of stay in current adress</label>
+                  <input type="number" name="noe" id="password" required>
+                </div>
+
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <input type="submit" value="Predict" />
+        </div>
+        <!-- <div class="button">
+          <input type="submit" value="Predict"/>
+        </div> -->
+      </div>
+    </form>
+  </body>
+</html>

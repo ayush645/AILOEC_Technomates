@@ -1,0 +1,23 @@
+
+{
+    "NPPM":1,
+    "LoanStatus":"existing loans paid back duly till now",
+    "Objective":"Purchase of radio/television",
+    "Amount":1278,
+    "Guarantee":"none",
+    "Experience": "between 1 and 4 years",
+    "M_Status":"male and single",
+    "ExistingLoan":1,
+    "Age":36,
+    "CA_Balance":"no current account",
+    "SA_Balance":"less than 100",
+    "PI_Balance":4,
+    "WorkAB":"Yes",
+    "PhNum":0,
+    "Tenure":24,
+    "prop":"Real Estate",
+    "JobTyp":"management/ self-employed/highly qualified employee/ officer",
+    "HouseT":"own",
+    "NOE":1
+
+}
