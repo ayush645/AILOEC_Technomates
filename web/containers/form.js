@@ -10,7 +10,7 @@ const axios = require('axios');
 // module to handle get request on localhost:3000 and load the registration form
 exports.home = (req, res) =>
 {  
-    res.sendFile('public/home.html', { root: '.' })
+    res.sendFile('public/Home.html', { root: '.' })
 } 
 exports.form = (req, res) =>
 {  
