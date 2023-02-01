@@ -5,7 +5,7 @@
 <div align="center">
 
   <a href="">![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)</a>
-  <a href="">[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)</a>
+  <a href="">[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)]</a>
   <a href="">[![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Naereen/badges)</a>
   <a href="">[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)</a>
   <a href="">[![Minimum node.js version](https://badgen.net/npm/node/express)](https://npmjs.com/package/express)</a>
@@ -14,7 +14,7 @@
 
 ![Loan Eligibility Prediction](https://user-images.githubusercontent.com/80636235/215766035-9725be67-246f-4c86-a2bb-ea5f251209b6.jpg)
 <!-- [![VISIT NOW]([https://i.imgur.com/ltoeZAt.png](https://user-images.githubusercontent.com/80636235/215766035-9725be67-246f-4c86-a2bb-ea5f251209b6.jpg))](https://www.youtube.com/watch?v=XfDXwT79xRA) -->
-<p align="Center"><a href="" > 🌐 Visit Me Now 🌐</a></p>
+<p align="Center"><a href="https://github.com/Hjiwnain/Website_Hack" > 🌐 Visit Me Now 🌐</a></p>
 
 
 <!-- [![Watch the video]([https://i.imgur.com/ltoeZAt.png](https://ibb.co/YbwMNDk))] -->
